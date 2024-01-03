@@ -40,7 +40,7 @@
     font-size: 1.8rem;
     color: $darkOrange;
     @include atMedium {
-      font-size: 2.5rem;
+      font-size: 2.5rem !important;
     }
   }
 
@@ -66,7 +66,7 @@
     font-size: 2.1rem;
     cursor: pointer;
     transition: all 0.3s;
-    background-color: #fff;
+    // background-color: #fff;
     color: $darkOrange;
     line-height: 0.7;
     @include atSmall {
@@ -75,7 +75,7 @@
     }
     @include atMedium {
       top: 26px;
-      font-size: 2.8rem;
+      font-size: 2.8rem !important;
     }
   }
 
