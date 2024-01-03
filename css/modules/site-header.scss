@@ -107,3 +107,10 @@
     margin-right: 0;
   }
 }
+
+
+i.site-header__menu-trigger {
+  @include atMedium {
+    display: none;
+  }
+}

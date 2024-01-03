@@ -841,6 +841,12 @@ body.login {
   margin-right: 0;
 }
 
+@media (min-width: 960px) {
+  i.site-header__menu-trigger {
+    display: none;
+  }
+}
+
 .site-footer {
   padding: 2rem 0 3.5rem 0;
   background-image: linear-gradient(#fff, #ececec);
