@@ -33,6 +33,10 @@
         wp_enqueue_style('university_extra_styles', get_theme_file_uri('/build/index.css'));
         wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i');
         wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+    
+        wp_localize_script('main-university-js', 'universityData', array(
+            'root_url' => get_site_url()
+        ));
     }
 
     add_action('wp_enqueue_scripts', 'university_files');
@@ -55,7 +59,7 @@
         if (!is_admin() AND is_post_type_archive('campus') AND $query->is_main_query()) {
             $query->set('posts_per_page', '-1');
         }
-        
+
         if (!is_admin() AND is_post_type_archive('event') AND $query->is_main_query()) {
             $today = date('Ymd');
 
