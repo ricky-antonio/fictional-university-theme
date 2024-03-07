@@ -16,7 +16,7 @@
                 </p>
             </div>
             <div class="generic-content">
-                <p><?php the_content(); ?></p>
+                <p><?php the_field('main_body_content'); ?></p>
             </div>
 
             <?php 
